@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Trà Sữa Truyền Thống",
+      "description": "Trà sữa đậm vị truyền thống.",
+      "image": "https://lh3.googleusercontent.com/proxy/MNAAxqhYOxP_r2XUwuJ-h36l-KjBQyoTNsDCyzzBSW76CUn-ux5pkvHwzWvob1T-wjppO1bibDArmBwtRYyKzMvNREZ4qRwK0i8XreeVT6yf8FUweyuKJJf5wkH6GevY_DKtC_v5LdcSd2O3n27nI0uK5yhrxw",
+      "price": 35000
+    },
+    {
+      "id": 2,
+      "name": "Trà Sữa Matcha",
+      "description": "Trà sữa vị matcha thơm ngon.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHka73JbpewTLmlV9NI56ObUVs6evr1cYXPIhSoGUSq-VqEpCnOfEmZCGJ3c9skl3Yivo&usqp=CAU",
+      "price": 40000
+    },
+    {
+      "id": 3,
+      "name": "Trà Sữa Oolong",
+      "description": "Hương vị trà oolong đặc trưng.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvB0YUa9pyXvcSML9XaeiodrCF09e61K7MJQ&s",
+      "price": 38000
+    },
+    {
+      "id": 4,
+      "name": "Trà Sữa Okinawa",
+      "description": "Kết hợp vị trà sữa và socola.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIviZ_f4Tu20jEh42eZonXP-X1Ig3UsLMGYA&s",
+      "price": 42000
+    },
+    {
+      "id": 5,
+      "name": "Trà Sữa Dâu",
+      "description": "Trà sữa dâu ngọt dịu.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXIIiO4XrjvpO6NWWtxZndFxztlUYBGnlpag&s",
+      "price": 39000
+    },
+    {
+      "id": 66,
+      "name": "Trà Sữa Truyền Thống",
+      "description": "Trà sữa đậm đà, vị truyền thống.",
+      "image": "https://lh3.googleusercontent.com/proxy/MNAAxqhYOxP_r2XUwuJ-h36l-KjBQyoTNsDCyzzBSW76CUn-ux5pkvHwzWvob1T-wjppO1bibDArmBwtRYyKzMvNREZ4qRwK0i8XreeVT6yf8FUweyuKJJf5wkH6GevY_DKtC_v5LdcSd2O3n27nI0uK5yhrxw",
+      "price": 35000
+    },
+    {
+      "id": 77,
+      "name": "Trà Sữa Matcha",
+      "description": "Trà sữa vị matcha thơm ngon.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHka73JbpewTLmlV9NI56ObUVs6evr1cYXPIhSoGUSq-VqEpCnOfEmZCGJ3c9skl3Yivo&usqp=CAU",
+      "price": 40000
+    },
+    {
+      "id": 88,
+      "name": "Trà Sữa Oolong",
+      "description": "Hương vị trà oolong đặc trưng.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvB0YUa9pyXvcSML9XaeiodrCF09e61K7MJQ&s",
+      "price": 38000
+    },
+    {
+      "id": 99,
+      "name": "Trà Sữa Okinawa",
+      "description": "Kết hợp hương vị trà sữa và socola.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIviZ_f4Tu20jEh42eZonXP-X1Ig3UsLMGYA&s",
+      "price": 42000
+    },
+    {
+      "id": 10,
+      "name": "Trà Sữa Dâu",
+      "description": "Trà sữa dâu ngọt dịu, thơm ngon.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXIIiO4XrjvpO6NWWtxZndFxztlUYBGnlpag&s",
+      "price": 39000
+    }
+  ],
+  "orders": [],
+  "users": []
+}
