@@ -1,5 +1,5 @@
 export interface Product {
-  id: string;
+  id: number;
   name: string;
   price: number;
   description: string;
@@ -9,13 +9,13 @@ export interface Product {
 }
 
 export interface Topping {
-  id: string;
+  id: number;
   name: string;
   price: number;
 }
 
 export interface Order {
-  id: string;
+  id: number;
   customerInfo: {
     name: string;
     email: string;
@@ -34,9 +34,16 @@ export interface OrderItem {
   toppings: string[];
   note?: string;
 }
+export interface CartItem {
+  id: number;
+  name: string;
+  price: number;
+  quantity: number;
+  toppings?: Topping[];
+}
 
 export interface User {
-  id: string;
+  id: number;
   name: string;
   email: string;
   password: string; // This would be hashed in a real application

@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { type Product } from "../types";
 
 export default function ProductDetail() {
   const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<Product | null>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`http://localhost:3000/products/${id}`)
@@ -12,6 +13,14 @@ export default function ProductDetail() {
       .then((data) => setProduct(data))
       .catch((error) => console.error("Error fetching product:", error));
   }, [id]);
+
+  const addToCart = () => {
+    // Giả sử có một cơ chế lưu trữ giỏ hàng (localStorage hoặc context)
+    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    cart.push({ ...product, quantity: 1 });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    navigate("/cart");
+  };
 
   if (!product) return <p className="text-center text-gray-500">Đang tải...</p>;
 
@@ -27,10 +36,11 @@ export default function ProductDetail() {
           <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
           <p className="text-gray-500 mt-2">{product.description}</p>
           <p className="text-purple-600 text-2xl font-semibold mt-4">
-  {Number(product.price).toLocaleString("vi-VN")}đ
-</p>
-
-          <button className="mt-6 bg-purple-600 text-white px-6 py-3 rounded-full text-lg hover:bg-purple-700 transition">
+            {Number(product.price).toLocaleString("vi-VN")}đ
+          </p>
+          <button 
+            onClick={addToCart} 
+            className="mt-6 bg-purple-600 text-white px-6 py-3 rounded-full text-lg hover:bg-purple-700 transition">
             Thêm vào giỏ hàng
           </button>
         </div>
